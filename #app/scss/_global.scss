@@ -1,0 +1,43 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+body {
+	background-color: #000;
+	min-width: 360px;
+}
+
+.container {
+	padding: 0px 20px;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	padding: 0 15px;
+}
+
+.title {
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 39px;
+	color: #ffffff;
+}
+h2 {
+	color: #ffffff;
+	font-family: Sen;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 36px;
+}

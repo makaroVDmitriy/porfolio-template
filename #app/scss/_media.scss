@@ -1,0 +1,165 @@
+@media (min-width: 360px) {
+	/* header */
+	.header {
+		border-bottom: 1px dashed #5b6876;
+		min-height: 736px;
+		&__menu-list li {
+			display: none;
+		}
+		&__top {
+			&-inner {
+				height: 72px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+		}
+
+		&__burger {
+			height: 24px;
+			width: 24px;
+			border: none;
+			background-color: #000;
+			position: relative;
+			&:hover {
+				cursor: pointer;
+			}
+			&::after {
+				content: "";
+				height: 3px;
+				width: 18px;
+				background-color: #c4c4c4;
+				position: absolute;
+				top: 6px;
+				right: 3px;
+			}
+
+			&::before {
+				content: "";
+				height: 3px;
+				width: 13px;
+				background-color: #c4c4c4;
+				position: absolute;
+				top: 14px;
+				right: 3px;
+			}
+		}
+
+		.header__main {
+			min-height: 288px;
+			position: relative;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			img {
+				height: auto;
+				width: 100%;
+			}
+
+			&-about {
+				position: absolute;
+				top: 408px;
+				right: 0;
+			}
+
+			&-title {
+				color: #ffffff;
+				font-weight: 700;
+				font-style: normal;
+				font-size: 32px;
+				line-height: 38px;
+				margin-bottom: 16px;
+				span {
+					color: $light-grey;
+				}
+			}
+			&-text {
+				color: #fff;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 27px;
+				padding-bottom: 16px;
+			}
+		}
+	}
+	/* header */
+
+	/* experience */
+	.experience {
+		color: $light-grey;
+		font-size: 16px;
+		line-height: 24px;
+		padding-top: 38px;
+		span {
+			margin-bottom: 8px;
+		}
+		&__title {
+			margin-bottom: 40px;
+		}
+
+		&__num {
+			font-size: 117px;
+			font-weight: 400;
+			line-height: 141px;
+			color: #8491a0;
+		}
+
+		&__company {
+			&-google {
+				span {
+					color: #11f041;
+				}
+			}
+			&-facebook {
+				span {
+					color: #5221e6;
+				}
+			}
+			&-dribbble {
+				span {
+					color: #f08686;
+				}
+			}
+			margin-bottom: 16px;
+		}
+	}
+
+	/* experience */
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding: 0 30px;
+	}
+	/* header */
+	.header {
+		&__menu-list li {
+			display: inline-block;
+		}
+
+		&__burger {
+			display: none;
+		}
+
+		&__menu {
+			&-list {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			&-item {
+				& + li {
+					margin-left: 48px;
+				}
+
+				a {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	/* header */
+}
+@media (min-width: 1440px) {
+}
